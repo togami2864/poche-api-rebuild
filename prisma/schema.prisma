@@ -11,12 +11,12 @@ generator client {
 }
 
 model Item {
-  id      String   @id @default(uuid())
-  title   String
-  url     String   @unique
-  memo    String?
-  date    DateTime @default(now())
-  ogp     String?
-  tags    String[]
-  private Boolean  @default(false)
+  id        String   @id @default(uuid())
+  title     String
+  url       String
+  memo      String?
+  date      DateTime @default(now())
+  ogp       String?
+  tags      String[]
+  isPrivate Boolean  @default(false)
 }
