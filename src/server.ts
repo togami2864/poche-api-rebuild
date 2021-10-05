@@ -36,6 +36,5 @@ app.delete(`/api/v1/poche/:id`, async (req, res) => {
   });
 });
 
-app.listen(8080, () =>
-  console.log("REST API server ready at: http://localhost:8080")
-);
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => console.log(`REST API server ready at: ${PORT}`));
